@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <h4>Mousha Alizee Segura Quintero 2163638</h4>
+<meta charset="utf-8">
+<title>Sucursales</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header id="main-header">
+<a id="logo-header" href="#">
+        <span class="site-name">PIA</span>
+         <span class="site-desc">Diseño Avanzado de Páginas Web</span>
+</a> <!--/#logo-header -->
+<nav>
+<ul>
+    <li><a href="somos.html">¿Quienes somos?</a></li> <!-- Menu Inicio -->
+    <li><a href="historia.html">Historia</a></li>
+    <li><a href="catalogo.html">Catálogo</a></li>
+    <li><a href="promociones.html">Promociones</a></li>
+    <li><a href="sucursales.html">Sucursales</a></li>
+    <li><a href="contactanos.html">Contáctanos</a></li>
+</ul>
+</nav>
+</header>
+<section id="main-content">
+    <header>
+    <h1>Informacion de nuestras sucursales</h1>
+    </header>
+    <p>Tenemos sucursales en Escobedo, San nicolas, Monterrey y Apodaca. Selecciona la ciudad y te mostraremos la sucursal.</p>
+    <div id="container">              
+        <button onclick="mostrarimagen('Escobedo')">Escobedo</button>             
+        <button onclick="mostrarimagen('Sannicolas')">San nicolas</button>             
+        <button onclick="mostrarimagen('Monterrey')">Monterrey</button>              
+        <button onclick="mostrarimagen('Apodaca')">Apodaca</button>                        
+        <img id="CombosHamburguesas" src="" alt="Imagen del combo">         
+        </header>
+    </section> 
+    </div>         
+    <script lenguaje="javascript">             
+        function mostrarimagen(modelo){                 
+            var image= document.getElementById('CombosHamburguesas');                 
+            switch(modelo){                     
+                case 'Escobedo':                         
+                image.src='escobedo.jpg';                         
+                break;                     
+                case 'Sannicolas':                         
+                image.src='sannicolas.jpeg';                         
+                break;                     
+                case 'Monterrey':                         
+                image.src='monterrey.jpg';                         
+                break;                     
+                case 'Apodaca':                         
+                image.src='apodaca.jpg';                         
+                break;                                        
+                default:                         
+                image.src='';                 
+            }                 
+            image.style.display='block';             
+        }    
+    </script> 
+</section> 
+</body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <h4>Mousha Alizee Segura Quintero 2163638</h4>
+<meta charset="utf-8">
+<title>Promociones</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header id="main-header">
+<a id="logo-header" href="#">
+        <span class="site-name">PIA</span>
+         <span class="site-desc">Diseño Avanzado de Páginas Web</span>
+</a> <!--/#logo-header -->
+<nav>
+<ul>
+    <li><a href="somos.html">¿Quienes somos?</a></li> <!-- Menu Inicio -->
+    <li><a href="historia.html">Historia</a></li>
+    <li><a href="catalogo.html">Catálogo</a></li>
+    <li><a href="promociones.html">Promociones</a></li>
+    <li><a href="sucursales.html">Sucursales</a></li>
+    <li><a href="contactanos.html">Contáctanos</a></li>
+</ul>
+</nav>
+</header>
+</header>
+<section id="main-content">
+    <header>
+<h4>¡Combos!</h4>
+<p>Échale un vistazo a las promociones y descuentos que samsung trae para ti.</p>
+<div id="container">              
+    <button onclick="mostrarimagen('promo1')">Pantalla 98" QLED 4K Q80C 6% de descuento + Recicla y ahorra $7,500 con Ecorenueva</button>             
+    <button onclick="mostrarimagen('promo2')">BESPOKE c/ Family Hub 29 c.u f.t
+        47% de dto. + Cupón $2000 FHUB2000 + Recicla y ahorra hasta $8580 con EcoRenueva</button>             
+    <button onclick="mostrarimagen('promo3')">Galaxy Buds FE
+        25% de dto. en la compra de 3 productos de la nueva Serie FE + Regalo Smart Tag2</button>              
+    <button onclick="mostrarimagen('promo4')">¡Arma tu Ecosistema FE y Ahorra más!
+        Obtén 25% de descuento adicional al comprar 3 productos de la Nueva Serie FE ó 15% de descuento adicional al comprar 2 productos de la Nueva Serie FE</button>                        
+    <img id="Promociones" src="" alt="Imagen de la promocion">         
+    </header>
+</section> 
+</div>         
+<script lenguaje="javascript">             
+    function mostrarimagen(modelo){                 
+        var image= document.getElementById('Promociones');                 
+        switch(modelo){                     
+            case 'promo1':                         
+            image.src='promo1.jpg';                         
+            break;                     
+            case 'promo2':                         
+            image.src='promo2.jpg';                         
+            break;                     
+            case 'promo3':                         
+            image.src='promo3.jpg';                         
+            break;                     
+            case 'promo4':                         
+            image.src='promo4.jpg';                         
+            break;                                        
+            default:                         
+            image.src='';                 
+        }                 
+        image.style.display='block';             
+    }    
+</script> 
+</body>
+</html>
